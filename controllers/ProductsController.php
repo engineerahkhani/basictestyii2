@@ -1,12 +1,12 @@
 <?php
 
 namespace app\controllers;
+use app\components\MyController;
 use Yii;
-use yii\web\Controller;
 use app\models\Products;
 use yii\web\HttpException;
 
-class ProductsController extends Controller
+class ProductsController extends MyController
 {
 //    public function actionView($id)
 //    {

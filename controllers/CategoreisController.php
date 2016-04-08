@@ -2,12 +2,13 @@
 
 namespace app\controllers;
 
+use app\components\MyController;
 use app\models\Categoreis;
 use yii\data\Pagination;
 use yii\web\HttpException;
 
 
-class CategoreisController extends \yii\web\Controller
+class CategoreisController extends MyController
 {
     public function actionIndex()
     {

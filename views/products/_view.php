@@ -16,7 +16,7 @@ use yii\helpers\Html;
         </p>
         <h5> <?= Html::a($model->name, ['/products/index', 'id' => $model->id]); ?></h5>
         <hr/>
-        <?php if ($model->quantity > 0): ?>
+        <?php if ($model->quantity > 0 && !Yii::$app->user->isGuest) : ?>
             <?= Html::a('<span class="glyphicon glyphicon-plus"></span>', ['/cart/add', 'id' => $model->id], ['class' => 'btn btn-primary btn-lg pull-left']) ?>
         <?php endif; ?>
         <p>

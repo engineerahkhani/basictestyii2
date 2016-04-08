@@ -51,6 +51,8 @@ $config = [
         ],
         */
     ],
+    'modules'=>['admin'=>'app\modules\admin\AdminModule',
+    ],
     'params' => $params,
 ];
 

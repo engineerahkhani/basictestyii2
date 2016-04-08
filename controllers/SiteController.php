@@ -2,15 +2,15 @@
 
 namespace app\controllers;
 
+use app\components\MyController;
 use Yii;
 use yii\filters\AccessControl;
-use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\Categoreis;
 
-class SiteController extends Controller
+class SiteController extends MyController
 {
     public function behaviors()
     {

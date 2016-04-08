@@ -10,10 +10,20 @@ $this->params['breadcrumbs'] = [
 ];
 ?>
 <div class="well">
+    <?php
+    if(file_exists(Yii::$app->basePath.'/web/photos/products/'.$model->id.'.jpg')){
+        $fileName = Yii::$app->homeUrl.'/photos/products/'.$model->id.'.jpg';
+    }else {
+        $fileName = Yii::$app->homeUrl.'/images/no-image.jpg';
+    }
+    ?>
+    <p>
+        <img  alt="<?= Html::encode($model->name); ?>" class="img-thumbnail img-responsive" src="<?= $fileName ?>"/>
+    </p>
     <h4>
         <?= Html::encode($model->name) ?>
     </h4>
-    <?php if ($model->quantity > 0): ?>
+    <?php if ($model->quantity > 0 && !Yii::$app->user->isGuest) :  ?>
         <?= Html::a('<span class="glyphicon glyphicon-plus">|افزودن به سبد خرید</span>', ['/cart/add', 'id' => $model->id], ['class' => 'btn btn-primary btn-lg pull-left']) ?>
     <?php endif; ?>
     <hr/>
