@@ -57,4 +57,13 @@ return array (
       '@yii/faker' => $vendorDir . '/yiisoft/yii2-faker',
     ),
   ),
+  'airani/yii2-bootstrap-rtl' => 
+  array (
+    'name' => 'airani/yii2-bootstrap-rtl',
+    'version' => '1.1.0.0',
+    'alias' => 
+    array (
+      '@airani/bootstrap' => $vendorDir . '/airani/yii2-bootstrap-rtl',
+    ),
+  ),
 );

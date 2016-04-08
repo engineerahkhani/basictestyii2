@@ -4,9 +4,52 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "479407875c975e7dbee0aefcb85e62d5",
-    "content-hash": "5c27dd23827e5c153817a7f3f5d227c6",
+    "hash": "2a8bc6056027d6f87db8c4a51d40ac9c",
+    "content-hash": "e01c928104aa81a75d9985f81bf6c4b7",
     "packages": [
+        {
+            "name": "airani/yii2-bootstrap-rtl",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/airani/yii2-bootstrap-rtl.git",
+                "reference": "59fc3a97ad51a810879a28ec3bbb958e8b33f148"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/airani/yii2-bootstrap-rtl/zipball/59fc3a97ad51a810879a28ec3bbb958e8b33f148",
+                "reference": "59fc3a97ad51a810879a28ec3bbb958e8b33f148",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
+                "bower-asset/bootstrap-rtl": "*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "airani\\bootstrap\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ali Irani",
+                    "email": "ali@irani.im"
+                }
+            ],
+            "description": "The Twitter Bootstrap Rtl extension for the Yii 2.0 framework",
+            "keywords": [
+                "bootstrap",
+                "rtl",
+                "yii2"
+            ],
+            "time": "2015-03-23 15:21:17"
+        },
         {
             "name": "bower-asset/bootstrap",
             "version": "v3.3.5",
@@ -55,6 +98,43 @@
                 "responsive",
                 "web"
             ]
+        },
+        {
+            "name": "bower-asset/bootstrap-rtl",
+            "version": "v3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/morteza/bootstrap-rtl.git",
+                "reference": "961dc50152095a948ffcd57a5df154856b4e49b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/morteza/bootstrap-rtl/zipball/961dc50152095a948ffcd57a5df154856b4e49b7",
+                "reference": "961dc50152095a948ffcd57a5df154856b4e49b7",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/bootstrap": ">=3.3.0"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "dist/css/bootstrap-rtl.css"
+                ],
+                "bower-asset-ignore": [
+                    "**/.*",
+                    "_config.yml",
+                    "CNAME",
+                    "composer.json",
+                    "CONTRIBUTING.md",
+                    "docs",
+                    "js/tests"
+                ]
+            },
+            "license": [
+                "Unlicensed Public Domain"
+            ],
+            "description": "Right-to-left (RTL) theme for Twitter Bootstrap 3.x"
         },
         {
             "name": "bower-asset/jquery",

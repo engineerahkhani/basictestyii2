@@ -8,6 +8,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\Categoreis;
 
 class SiteController extends Controller
 {
@@ -49,7 +50,8 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+        $models = Categoreis::find()->orderBy('name')->where(['confrimed'=>1])->all();
+        return $this->render('index',['models'=>$models]);
     }
 
     public function actionLogin()

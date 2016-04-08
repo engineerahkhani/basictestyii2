@@ -1,17 +1,17 @@
 <?php
-
+use yii\helpers\Html;
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = Yii::$app->name;
 ?>
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Congratulations Ahmad khani!</h1>
+        <h1>فروشگاه اینترنتی بارانا</h1>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
+        <p class="lead">برای شروع از منو بالا استفاده کنید</p>
 
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com"><?= Html::encode(Yii::$app->name) ?></a></p>
     </div>
 
     <div class="body-content">
@@ -47,6 +47,16 @@ $this->title = 'My Yii Application';
 
                 <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
             </div>
+        </div>
+        <div class="row">
+            <pre>
+            <?php var_dump ($models); ?>
+            </pre>
+            <?php foreach($models as $model): ?>
+                <div class="col-sm-2">
+                    <?= Html::a($model->name,['/categories/view','id'=>$model->id],['class'=>'btn btn-info btn-xs btn-block']) ?>
+                </div>
+            <?php endforeach; ?>
         </div>
 
     </div>
