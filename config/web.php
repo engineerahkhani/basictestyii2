@@ -9,7 +9,7 @@ $config = [
     'language'=>'fa_IR',
     'timeZone'=>'Asia/Tehran',
     'name'=>'Barana',
-    'homeUrl'=>'http://localhost/basictestyii2',
+    'homeUrl'=>'http://localhost/basictestyii2/web',
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
